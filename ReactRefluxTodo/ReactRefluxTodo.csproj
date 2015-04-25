@@ -59,7 +59,6 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="todoApp\main.js.map" />
     <Content Include="todoApp\node_modules\react-typescript-definitions\LICENSE" />
     <Content Include="todoApp\node_modules\react-typescript-definitions\package.json" />
     <Content Include="todoApp\node_modules\react-typescript-definitions\README.md" />
@@ -134,7 +133,6 @@
   <ItemGroup>
     <Content Include="index.html" />
     <Content Include="todoApp\app.js" />
-    <Content Include="todoApp\main.js" />
     <Content Include="todoApp\node_modules\react\addons.js" />
     <Content Include="todoApp\node_modules\react\dist\JSXTransformer.js" />
     <Content Include="todoApp\node_modules\react\dist\react-with-addons.js" />
