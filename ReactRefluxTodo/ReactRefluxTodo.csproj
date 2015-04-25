@@ -1,0 +1,476 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ED8B9E98-3363-4AF8-A281-78DBE44416CA}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ReactRefluxTodo</RootNamespace>
+    <AssemblyName>ReactRefluxTodo</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TypeScriptToolsVersion>1.1</TypeScriptToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="todoApp\main.js.map" />
+    <Content Include="todoApp\node_modules\react-typescript-definitions\LICENSE" />
+    <Content Include="todoApp\node_modules\react-typescript-definitions\package.json" />
+    <Content Include="todoApp\node_modules\react-typescript-definitions\README.md" />
+    <Content Include="todoApp\node_modules\react\node_modules\.bin\envify" />
+    <Content Include="todoApp\node_modules\react\node_modules\.bin\envify.cmd" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\.npmignore" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\bin\envify" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\.jshintrc" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\.npmignore" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\.travis.yml" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\LICENSE" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\.bin\esparse" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\.bin\esparse.cmd" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\.bin\esvalidate" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\.bin\esvalidate.cmd" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\base62\.travis.yml" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\base62\LICENSE" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\base62\package.json" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\base62\Readme.md" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\esprima-fb\package.json" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\esprima-fb\README.md" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\source-map\.npmignore" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\source-map\.travis.yml" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\source-map\build\prefix-source-map.jsm" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\source-map\build\prefix-utils.jsm" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\source-map\build\suffix-source-map.jsm" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\source-map\build\suffix-utils.jsm" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\source-map\CHANGELOG.md" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\source-map\LICENSE" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\source-map\node_modules\amdefine\LICENSE" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\source-map\node_modules\amdefine\package.json" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\source-map\node_modules\amdefine\README.md" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\source-map\package.json" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\source-map\README.md" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\package.json" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\README.md" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\through\.travis.yml" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\through\LICENSE.APACHE2" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\through\LICENSE.MIT" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\through\package.json" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\through\readme.markdown" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\package.json" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\README.md" />
+    <Content Include="todoApp\node_modules\react\package.json" />
+    <Content Include="todoApp\node_modules\react\README.md" />
+    <Content Include="todoApp\node_modules\reflux\.editorconfig" />
+    <Content Include="todoApp\node_modules\reflux\.jshintrc" />
+    <Content Include="todoApp\node_modules\reflux\.npmignore" />
+    <Content Include="todoApp\node_modules\reflux\.travis.yml" />
+    <Content Include="todoApp\node_modules\reflux\bower.json" />
+    <Content Include="todoApp\node_modules\reflux\CHANGELOG.md" />
+    <Content Include="todoApp\node_modules\reflux\LICENSE.md" />
+    <Content Include="todoApp\node_modules\reflux\node_modules\eventemitter3\.npmignore" />
+    <Content Include="todoApp\node_modules\reflux\node_modules\eventemitter3\.travis.yml" />
+    <Content Include="todoApp\node_modules\reflux\node_modules\eventemitter3\component.json" />
+    <Content Include="todoApp\node_modules\reflux\node_modules\eventemitter3\LICENSE" />
+    <Content Include="todoApp\node_modules\reflux\node_modules\eventemitter3\package.json" />
+    <Content Include="todoApp\node_modules\reflux\node_modules\eventemitter3\README.md" />
+    <Content Include="todoApp\node_modules\reflux\node_modules\native-promise-only\.npmignore" />
+    <Content Include="todoApp\node_modules\reflux\node_modules\native-promise-only\package.json" />
+    <Content Include="todoApp\node_modules\reflux\node_modules\native-promise-only\README.md" />
+    <Content Include="todoApp\node_modules\reflux\package.json" />
+    <Content Include="todoApp\node_modules\reflux\README.md" />
+    <Content Include="todoApp\package.json" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="index.html" />
+    <Content Include="todoApp\app.js" />
+    <Content Include="todoApp\main.js" />
+    <Content Include="todoApp\node_modules\react\addons.js" />
+    <Content Include="todoApp\node_modules\react\dist\JSXTransformer.js" />
+    <Content Include="todoApp\node_modules\react\dist\react-with-addons.js" />
+    <Content Include="todoApp\node_modules\react\dist\react-with-addons.min.js" />
+    <Content Include="todoApp\node_modules\react\dist\react.js" />
+    <Content Include="todoApp\node_modules\react\dist\react.min.js" />
+    <Content Include="todoApp\node_modules\react\lib\accumulateInto.js" />
+    <Content Include="todoApp\node_modules\react\lib\adler32.js" />
+    <Content Include="todoApp\node_modules\react\lib\AutoFocusMixin.js" />
+    <Content Include="todoApp\node_modules\react\lib\BeforeInputEventPlugin.js" />
+    <Content Include="todoApp\node_modules\react\lib\CallbackQueue.js" />
+    <Content Include="todoApp\node_modules\react\lib\camelize.js" />
+    <Content Include="todoApp\node_modules\react\lib\camelizeStyleName.js" />
+    <Content Include="todoApp\node_modules\react\lib\ChangeEventPlugin.js" />
+    <Content Include="todoApp\node_modules\react\lib\ClientReactRootIndex.js" />
+    <Content Include="todoApp\node_modules\react\lib\cloneWithProps.js" />
+    <Content Include="todoApp\node_modules\react\lib\containsNode.js" />
+    <Content Include="todoApp\node_modules\react\lib\createArrayFromMixed.js" />
+    <Content Include="todoApp\node_modules\react\lib\createFullPageComponent.js" />
+    <Content Include="todoApp\node_modules\react\lib\createNodesFromMarkup.js" />
+    <Content Include="todoApp\node_modules\react\lib\CSSCore.js" />
+    <Content Include="todoApp\node_modules\react\lib\CSSProperty.js" />
+    <Content Include="todoApp\node_modules\react\lib\CSSPropertyOperations.js" />
+    <Content Include="todoApp\node_modules\react\lib\cx.js" />
+    <Content Include="todoApp\node_modules\react\lib\Danger.js" />
+    <Content Include="todoApp\node_modules\react\lib\dangerousStyleValue.js" />
+    <Content Include="todoApp\node_modules\react\lib\DefaultEventPluginOrder.js" />
+    <Content Include="todoApp\node_modules\react\lib\DOMChildrenOperations.js" />
+    <Content Include="todoApp\node_modules\react\lib\DOMProperty.js" />
+    <Content Include="todoApp\node_modules\react\lib\DOMPropertyOperations.js" />
+    <Content Include="todoApp\node_modules\react\lib\emptyFunction.js" />
+    <Content Include="todoApp\node_modules\react\lib\emptyObject.js" />
+    <Content Include="todoApp\node_modules\react\lib\EnterLeaveEventPlugin.js" />
+    <Content Include="todoApp\node_modules\react\lib\escapeTextContentForBrowser.js" />
+    <Content Include="todoApp\node_modules\react\lib\EventConstants.js" />
+    <Content Include="todoApp\node_modules\react\lib\EventListener.js" />
+    <Content Include="todoApp\node_modules\react\lib\EventPluginHub.js" />
+    <Content Include="todoApp\node_modules\react\lib\EventPluginRegistry.js" />
+    <Content Include="todoApp\node_modules\react\lib\EventPluginUtils.js" />
+    <Content Include="todoApp\node_modules\react\lib\EventPropagators.js" />
+    <Content Include="todoApp\node_modules\react\lib\ExecutionEnvironment.js" />
+    <Content Include="todoApp\node_modules\react\lib\FallbackCompositionState.js" />
+    <Content Include="todoApp\node_modules\react\lib\findDOMNode.js" />
+    <Content Include="todoApp\node_modules\react\lib\flattenChildren.js" />
+    <Content Include="todoApp\node_modules\react\lib\focusNode.js" />
+    <Content Include="todoApp\node_modules\react\lib\forEachAccumulated.js" />
+    <Content Include="todoApp\node_modules\react\lib\getActiveElement.js" />
+    <Content Include="todoApp\node_modules\react\lib\getEventCharCode.js" />
+    <Content Include="todoApp\node_modules\react\lib\getEventKey.js" />
+    <Content Include="todoApp\node_modules\react\lib\getEventModifierState.js" />
+    <Content Include="todoApp\node_modules\react\lib\getEventTarget.js" />
+    <Content Include="todoApp\node_modules\react\lib\getIteratorFn.js" />
+    <Content Include="todoApp\node_modules\react\lib\getMarkupWrap.js" />
+    <Content Include="todoApp\node_modules\react\lib\getNodeForCharacterOffset.js" />
+    <Content Include="todoApp\node_modules\react\lib\getReactRootElementInContainer.js" />
+    <Content Include="todoApp\node_modules\react\lib\getTextContentAccessor.js" />
+    <Content Include="todoApp\node_modules\react\lib\getUnboundedScrollPosition.js" />
+    <Content Include="todoApp\node_modules\react\lib\HTMLDOMPropertyConfig.js" />
+    <Content Include="todoApp\node_modules\react\lib\hyphenate.js" />
+    <Content Include="todoApp\node_modules\react\lib\hyphenateStyleName.js" />
+    <Content Include="todoApp\node_modules\react\lib\instantiateReactComponent.js" />
+    <Content Include="todoApp\node_modules\react\lib\invariant.js" />
+    <Content Include="todoApp\node_modules\react\lib\isEventSupported.js" />
+    <Content Include="todoApp\node_modules\react\lib\isNode.js" />
+    <Content Include="todoApp\node_modules\react\lib\isTextInputElement.js" />
+    <Content Include="todoApp\node_modules\react\lib\isTextNode.js" />
+    <Content Include="todoApp\node_modules\react\lib\joinClasses.js" />
+    <Content Include="todoApp\node_modules\react\lib\keyMirror.js" />
+    <Content Include="todoApp\node_modules\react\lib\keyOf.js" />
+    <Content Include="todoApp\node_modules\react\lib\LinkedStateMixin.js" />
+    <Content Include="todoApp\node_modules\react\lib\LinkedValueUtils.js" />
+    <Content Include="todoApp\node_modules\react\lib\LocalEventTrapMixin.js" />
+    <Content Include="todoApp\node_modules\react\lib\mapObject.js" />
+    <Content Include="todoApp\node_modules\react\lib\memoizeStringOnly.js" />
+    <Content Include="todoApp\node_modules\react\lib\MobileSafariClickEventPlugin.js" />
+    <Content Include="todoApp\node_modules\react\lib\Object.assign.js" />
+    <Content Include="todoApp\node_modules\react\lib\onlyChild.js" />
+    <Content Include="todoApp\node_modules\react\lib\performance.js" />
+    <Content Include="todoApp\node_modules\react\lib\performanceNow.js" />
+    <Content Include="todoApp\node_modules\react\lib\PooledClass.js" />
+    <Content Include="todoApp\node_modules\react\lib\quoteAttributeValueForBrowser.js" />
+    <Content Include="todoApp\node_modules\react\lib\React.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactBrowserComponentMixin.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactBrowserEventEmitter.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactChildReconciler.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactChildren.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactClass.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactComponent.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactComponentBrowserEnvironment.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactComponentEnvironment.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactComponentWithPureRenderMixin.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactCompositeComponent.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactContext.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactCSSTransitionGroup.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactCSSTransitionGroupChild.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactCurrentOwner.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactDefaultBatchingStrategy.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactDefaultInjection.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactDefaultPerf.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactDefaultPerfAnalysis.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactDOM.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactDOMButton.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactDOMComponent.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactDOMForm.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactDOMIDOperations.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactDOMIframe.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactDOMImg.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactDOMInput.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactDOMOption.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactDOMSelect.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactDOMSelection.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactDOMTextarea.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactDOMTextComponent.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactElement.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactElementValidator.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactEmptyComponent.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactErrorUtils.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactEventEmitterMixin.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactEventListener.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactFragment.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactInjection.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactInputSelection.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactInstanceHandles.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactInstanceMap.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactLifeCycle.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactLink.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactMarkupChecksum.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactMount.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactMultiChild.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactMultiChildUpdateTypes.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactNativeComponent.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactOwner.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactPerf.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactPropTransferer.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactPropTypeLocationNames.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactPropTypeLocations.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactPropTypes.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactPutListenerQueue.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactReconciler.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactReconcileTransaction.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactRef.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactRootIndex.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactServerRendering.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactServerRenderingTransaction.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactStateSetters.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactTestUtils.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactTransitionChildMapping.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactTransitionEvents.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactTransitionGroup.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactUpdateQueue.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactUpdates.js" />
+    <Content Include="todoApp\node_modules\react\lib\ReactWithAddons.js" />
+    <Content Include="todoApp\node_modules\react\lib\SelectEventPlugin.js" />
+    <Content Include="todoApp\node_modules\react\lib\ServerReactRootIndex.js" />
+    <Content Include="todoApp\node_modules\react\lib\setInnerHTML.js" />
+    <Content Include="todoApp\node_modules\react\lib\setTextContent.js" />
+    <Content Include="todoApp\node_modules\react\lib\shallowEqual.js" />
+    <Content Include="todoApp\node_modules\react\lib\shouldUpdateReactComponent.js" />
+    <Content Include="todoApp\node_modules\react\lib\SimpleEventPlugin.js" />
+    <Content Include="todoApp\node_modules\react\lib\SVGDOMPropertyConfig.js" />
+    <Content Include="todoApp\node_modules\react\lib\SyntheticClipboardEvent.js" />
+    <Content Include="todoApp\node_modules\react\lib\SyntheticCompositionEvent.js" />
+    <Content Include="todoApp\node_modules\react\lib\SyntheticDragEvent.js" />
+    <Content Include="todoApp\node_modules\react\lib\SyntheticEvent.js" />
+    <Content Include="todoApp\node_modules\react\lib\SyntheticFocusEvent.js" />
+    <Content Include="todoApp\node_modules\react\lib\SyntheticInputEvent.js" />
+    <Content Include="todoApp\node_modules\react\lib\SyntheticKeyboardEvent.js" />
+    <Content Include="todoApp\node_modules\react\lib\SyntheticMouseEvent.js" />
+    <Content Include="todoApp\node_modules\react\lib\SyntheticTouchEvent.js" />
+    <Content Include="todoApp\node_modules\react\lib\SyntheticUIEvent.js" />
+    <Content Include="todoApp\node_modules\react\lib\SyntheticWheelEvent.js" />
+    <Content Include="todoApp\node_modules\react\lib\toArray.js" />
+    <Content Include="todoApp\node_modules\react\lib\Transaction.js" />
+    <Content Include="todoApp\node_modules\react\lib\traverseAllChildren.js" />
+    <Content Include="todoApp\node_modules\react\lib\update.js" />
+    <Content Include="todoApp\node_modules\react\lib\ViewportMetrics.js" />
+    <Content Include="todoApp\node_modules\react\lib\warning.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\custom.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\index.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\jestEnvironment.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\jestPreprocessor.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\base62\base62.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\base62\test\test.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\esprima-fb\bin\esparse.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\esprima-fb\bin\esvalidate.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\esprima-fb\esprima.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\esprima-fb\test\compat.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\esprima-fb\test\reflect.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\esprima-fb\test\run.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\esprima-fb\test\runner.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\esprima-fb\test\test.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\source-map\build\assert-shim.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\source-map\build\mini-require.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\source-map\build\suffix-browser.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\source-map\build\test-prefix.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\source-map\build\test-suffix.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\source-map\lib\source-map.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\source-map\lib\source-map\array-set.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\source-map\lib\source-map\base64-vlq.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\source-map\lib\source-map\base64.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\source-map\lib\source-map\binary-search.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\source-map\lib\source-map\source-map-consumer.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\source-map\lib\source-map\source-map-generator.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\source-map\lib\source-map\source-node.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\source-map\lib\source-map\util.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\source-map\Makefile.dryice.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\source-map\node_modules\amdefine\amdefine.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\source-map\node_modules\amdefine\intercept.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\source-map\test\run-tests.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\source-map\test\source-map\test-api.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\source-map\test\source-map\test-array-set.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\source-map\test\source-map\test-base64-vlq.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\source-map\test\source-map\test-base64.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\source-map\test\source-map\test-binary-search.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\source-map\test\source-map\test-dog-fooding.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\source-map\test\source-map\test-source-map-consumer.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\source-map\test\source-map\test-source-map-generator.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\source-map\test\source-map\test-source-node.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\node_modules\source-map\test\source-map\util.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\polyfill\Object.es6.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\src\docblock.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\src\jstransform.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\src\utils.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\src\__tests__\jstransform-test.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\src\__tests__\jstransform-utils-test.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\visitors\es6-arrow-function-visitors.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\visitors\es6-call-spread-visitors.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\visitors\es6-class-visitors.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\visitors\es6-destructuring-visitors.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\visitors\es6-object-concise-method-visitors.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\visitors\es6-object-short-notation-visitors.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\visitors\es6-rest-param-visitors.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\visitors\es6-template-visitors.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\visitors\es7-rest-property-helpers.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\visitors\es7-spread-property-visitors.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\visitors\reserved-words-helper.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\visitors\reserved-words-visitors.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\visitors\type-syntax.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\visitors\__tests__\es6-arrow-function-visitors-test.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\visitors\__tests__\es6-call-spread-visitors-test.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\visitors\__tests__\es6-class-visitors-test.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\visitors\__tests__\es6-destructuring-visitors-test.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\visitors\__tests__\es6-es7-object-integration-test.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\visitors\__tests__\es6-object-concise-method-visitors-test.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\visitors\__tests__\es6-object-short-notation-visitors-test.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\visitors\__tests__\es6-rest-param-visitors-test.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\visitors\__tests__\es6-template-visitors-test.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\visitors\__tests__\es7-rest-property-helpers-test.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\visitors\__tests__\es7-spread-property-visitors-test.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\visitors\__tests__\gen\generate-type-syntax-test.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\visitors\__tests__\gen\type-syntax-test.rec.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\visitors\__tests__\reserved-words-test.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\visitors\__tests__\type-alias-syntax-test.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\visitors\__tests__\type-class-syntax-test.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\visitors\__tests__\type-function-syntax-test.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\visitors\__tests__\type-interface-syntax-test.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\visitors\__tests__\type-object-method-syntax-test.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\visitors\__tests__\type-pattern-syntax-test.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\visitors\__tests__\type-syntax-test.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\jstransform\visitors\__tests__\type-variable-declaration-syntax-test.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\through\index.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\through\test\async.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\through\test\auto-destroy.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\through\test\buffering.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\through\test\end.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\node_modules\through\test\index.js" />
+    <Content Include="todoApp\node_modules\react\node_modules\envify\visitors.js" />
+    <Content Include="todoApp\node_modules\react\react.js" />
+    <Content Include="todoApp\node_modules\reflux\dist\reflux.js" />
+    <Content Include="todoApp\node_modules\reflux\dist\reflux.min.js" />
+    <Content Include="todoApp\node_modules\reflux\Gruntfile.js" />
+    <Content Include="todoApp\node_modules\reflux\index.js" />
+    <Content Include="todoApp\node_modules\reflux\karma.conf.js" />
+    <Content Include="todoApp\node_modules\reflux\node_modules\eventemitter3\index.js" />
+    <Content Include="todoApp\node_modules\reflux\node_modules\eventemitter3\test.js" />
+    <Content Include="todoApp\node_modules\reflux\node_modules\native-promise-only\build.js" />
+    <Content Include="todoApp\node_modules\reflux\node_modules\native-promise-only\lib\npo.src.js" />
+    <Content Include="todoApp\node_modules\reflux\node_modules\native-promise-only\npo.js" />
+    <Content Include="todoApp\node_modules\reflux\node_modules\native-promise-only\tester.js" />
+    <Content Include="todoApp\node_modules\reflux\node_modules\native-promise-only\test_adapter.js" />
+    <Content Include="todoApp\node_modules\reflux\src\ActionMethods.js" />
+    <Content Include="todoApp\node_modules\reflux\src\bindMethods.js" />
+    <Content Include="todoApp\node_modules\reflux\src\connect.js" />
+    <Content Include="todoApp\node_modules\reflux\src\connectFilter.js" />
+    <Content Include="todoApp\node_modules\reflux\src\createAction.js" />
+    <Content Include="todoApp\node_modules\reflux\src\createStore.js" />
+    <Content Include="todoApp\node_modules\reflux\src\index.js" />
+    <Content Include="todoApp\node_modules\reflux\src\joins.js" />
+    <Content Include="todoApp\node_modules\reflux\src\Keep.js" />
+    <Content Include="todoApp\node_modules\reflux\src\ListenerMethods.js" />
+    <Content Include="todoApp\node_modules\reflux\src\ListenerMixin.js" />
+    <Content Include="todoApp\node_modules\reflux\src\listenTo.js" />
+    <Content Include="todoApp\node_modules\reflux\src\listenToMany.js" />
+    <Content Include="todoApp\node_modules\reflux\src\mixer.js" />
+    <Content Include="todoApp\node_modules\reflux\src\PublisherMethods.js" />
+    <Content Include="todoApp\node_modules\reflux\src\StoreMethods.js" />
+    <Content Include="todoApp\node_modules\reflux\src\utils.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="todoApp\node_modules\react-typescript-definitions\react.d.ts" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51407</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:51407/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
