@@ -43,7 +43,7 @@ var TodoList = React.createClass({
 });
 
 var AddTodo = React.createClass({
-    mixings: [Reflux.connect(store)],
+    mixins: [Reflux.connect(store)],
     addTodo: function() {
         actions.addTodo(this.refs["todoName"].getDOMNode().value);
     },
